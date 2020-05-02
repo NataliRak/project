@@ -1,0 +1,42 @@
+@media ( max-width: 767px ) {
+    .header {
+        &__official {
+            margin-right: 15px;
+        }
+        &__contacs {
+            margin-right: 15px;
+            .phone {
+                font-size: 17px;
+            }
+        }
+    }
+    
+    .promo {
+        &__wrapper {
+            align-items: center;
+        }
+    }
+    .advan {
+        &__items {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}
+
+@media ( max-width: 575px ) {
+    
+    .header {
+        &__official {
+            display: none;
+        }
+        &__logo {
+            margin-left: 15px;
+        }
+    }
+}
+
+
+
+
+
