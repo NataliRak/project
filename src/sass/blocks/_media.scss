@@ -22,6 +22,43 @@
             flex-direction: column;
         }
     }
+    .run {
+        &__title {
+            text-align: center;
+        }
+        &__subtitle {
+            text-align: center;
+            margin-top: 40px;
+        }
+        .form_run {
+            margin-top: 30px;
+            align-items: center;
+        }
+    }
+    .tab {
+        &__cards {
+            display: flex;
+            justify-content: center;
+        }
+    }
+    .review {
+        &__wrapper {
+            flex-direction: column;
+            text-align: center;
+        }
+        &__img {
+            margin-left: 62px;
+        }
+        &__descr {
+            margin-top: 20px;
+            
+            &_info {
+                width: 100%;
+                
+            }
+        }
+        
+    }
 }
 
 @media ( max-width: 575px ) {

@@ -11,7 +11,25 @@ $(document).ready(function(){
         $(this)
           .addClass('tab__name_active').siblings().removeClass('tab__name_active')
           .closest('div.container').find('div.tab__cards').removeClass('tab__cards_active').eq($(this).index()).addClass('tab__cards_active');
-      });
+    });
+
+
+    function toggleSlide(item) {
+        $(item).each(function(i) {
+            $(this).on('click', function(e) {
+                e.preventDefault();
+                $('.tab__card_content').eq(i).toggleClass('tab__card_content_active');
+                $('.tab__card_list').eq(i).toggleClass('tab__card_list_active');
+            })
+        });
+    };
+
+    toggleSlide('.tab__card_link');
+    toggleSlide('.tab__card_back');
+
+
       
     
-  });
+      
+    
+});
