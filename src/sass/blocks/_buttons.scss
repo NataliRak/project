@@ -9,6 +9,10 @@
     font-weight: 500;
     text-transform: uppercase;
     margin-top: 8px;
+    &:hover {
+        background-color:rgb(255, 100, 100);
+        box-shadow: 5px 5px 20px rgb(51, 22, 22);
+    }
     &_main {
         width: 300px;
         height: 50px;
