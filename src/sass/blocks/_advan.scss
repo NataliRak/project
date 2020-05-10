@@ -36,5 +36,13 @@
                 text-decoration: underline;
             }
         }
+        .item {
+            .animate {
+                animation: heartbeat 1.5s ease infinite;
+                &:hover {
+                    animation-play-state: paused;
+                }
+            }
+        }
     }
 }

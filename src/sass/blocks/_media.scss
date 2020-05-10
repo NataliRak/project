@@ -180,6 +180,39 @@
             font-size: 14px;
         }
     }
+
+    .pageup {
+        bottom: 20px;
+        right: 22px;
+        width: 30px;
+    }
+    .overlay {
+        .modal{
+            width: 360px;
+            min-height: 300px;
+            &__title {
+                font-size: 15px;
+            }
+            &__descr {
+                font-size: 12px;
+                margin-bottom: 15px;
+            }
+        }
+        .form {
+            
+            input {
+                width: 300px;
+                height: 30px;
+                margin-bottom: 10px;
+            }
+        }
+        .button_form {
+            height: 50px;
+
+        }
+    }
+
+    
 }
 
 @media ( max-width: 500px ) {
@@ -301,6 +334,37 @@
                     height: 22px;
                 }
             }
+        }
+    }
+
+    .pageup {
+        bottom: 20px;
+        right: 22px;
+        width: 30px;
+    }
+    .overlay {
+        .modal{
+            width: 360px;
+            min-height: 300px;
+            &__title {
+                font-size: 15px;
+            }
+            &__descr {
+                font-size: 12px;
+                margin-bottom: 15px;
+            }
+        }
+        .form {
+            
+            input {
+                width: 300px;
+                height: 30px;
+                margin-bottom: 10px;
+            }
+        }
+        .button_form {
+            height: 50px;
+
         }
     }
 

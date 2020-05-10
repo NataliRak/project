@@ -7,11 +7,12 @@
 	<link rel="stylesheet" href="/css/fonts.css">
 	<link rel="stylesheet" href="/css/bootstrap-reboot.min.css">
 	<link rel="stylesheet" href="/css/slick.css">
+	<link rel="stylesheet" href="css/animate.css">
 	<link rel="stylesheet" href="/css/style.min.css">
 
 </head>
 <body>
-  <section class="promo">
+  <section class="promo" id="up">
 	  <div class="container">
 		  <header class="header">
 			  <a href="#" class="header__logo">
@@ -65,7 +66,7 @@
 					так как сами бегают полумарафоны, переплыли Босфор, готовятся к соревнованиям по триатлону!</p>
 			  </div>
 			  <div class="item">
-				  <img src="/icons/advan/heart.png" alt="heart">
+				  <img src="/icons/advan/heart.png" alt="heart" class="animate">
 				  <h3>Заботимся о здоровье</h3>
 				  <p>Мы работаем для того, 
 					чтобы Ваши занятия спортом шли на пользу Вашему здоровью и были в радость Вам и Вашим близким!</p>
@@ -87,10 +88,10 @@
 			по подбору пульсометра </h2>
 			<h3 class="run__subtitle">Просто заполните форму заявки<br> 
 			и мы перезвоним вам в течении 10 минут</h3>
-			<form action="#" class="form form_run">
-				<label><input type="text" placeholder="Ваше имя" required></label>
-				<label><input type="number" placeholder="Ваш телефон" required></label>
-				<label><input type="email" placeholder="Ваш E-mail" required></label>
+			<form action="#" id="run-form" class="form form_run">
+				<label><input name="name" type="text" placeholder="Ваше имя" required></label>
+				<label><input name="phone"  placeholder="Ваш телефон" required></label>
+				<label><input name="email" type="email" placeholder="Ваш E-mail" required></label>
 
 				<button type="submit" class="button button_form">заказать кОНСУЛЬТАЦИЮ</button>
 			</form>
@@ -98,7 +99,7 @@
 	  </div>
   </section>
 
-  <section class="carousell">
+  <div class="carousell">
 	  <div class="container">
 		<div class="carousell__slide">
 			<div><img src="/img/slide_1.png" alt="slide"></div>
@@ -107,7 +108,7 @@
 		  </div>
 
 	  </div>
-  </section>
+  </div>
 
   <section class="tab">
 	  <div class="container">
@@ -510,7 +511,7 @@
   <section class="review">
 	  <div class="container">
 		  <h2 class="review__title">отзывы клиентов</h2>
-		  <div class="review__wrapper">
+		  <div class="review__wrapper wow fadeInUp" data-wow-duration="1.2s" data-wow-delay="0.8s">
 			  	<img src="img/foto1.png" alt="foto" class="review__img">
 			  	<div class="review__descr">
 				  	<h3 class="review__descr_name">Ирина Иванченко</h3>
@@ -524,7 +525,7 @@
 			  	</div>
 		  </div>
 
-		  <div class="review__wrapper">
+		  <div class="review__wrapper wow fadeInUp" data-wow-duration="1.2s" data-wow-delay="0.8s">
 			<img src="img/foto2.png" alt="foto" class="review__img">
 			<div class="review__descr">
 				<h3 class="review__descr_name">Иван Сёмочкин</h3>
@@ -536,7 +537,7 @@
 			</div>
 		  </div>
 
-		  <div class="review__wrapper">
+		  <div class="review__wrapper wow fadeInUp" data-wow-duration="1.2s" data-wow-delay="0.8s">
 			<img src="img/foto3.png" alt="foto" class="review__img">
 			<div class="review__descr">
 				<h3 class="review__descr_name">Юлия Дашкина</h3>
@@ -555,7 +556,7 @@
   </section>
 
   <footer class="footer">
-		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2244.4304811959933!2d37.644807315829034!3d55.76839498055751!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a636edcd2ad%3A0x4c2ca101e2c8c617!2z0JzRj9GB0L3QuNGG0LrQuNC5INC_0YAt0LQsIDQvMywg0JzQvtGB0LrQstCwLCDQoNC-0YHRgdC40Y8sIDEwNzA3OA!5e0!3m2!1sru!2sil!4v1588757171644!5m2!1sru!2sil" width="100%" height="630" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2244.4304811959933!2d37.644807315829034!3d55.76839498055751!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a636edcd2ad%3A0x4c2ca101e2c8c617!2z0JzRj9GB0L3QuNGG0LrQuNC5INC_0YAt0LQsIDQvMywg0JzQvtGB0LrQstCwLCDQoNC-0YHRgdC40Y8sIDEwNzA3OA!5e0!3m2!1sru!2sil!4v1588757171644!5m2!1sru!2sil" width="100%" height="630" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
 
 		<div class="footer__info">
 			<div class="footer__info_wrapper">
@@ -580,9 +581,9 @@
 			и мы перезвоним вам в течении 10 минут</div>
 
 		  <form action="#" class="form form_modal">
-				<label><input type="text" placeholder="Ваше имя" required></label>
-				<label><input type="number" placeholder="Ваш телефон" required></label>
-				<label><input type="email" placeholder="Ваш E-mail" required></label>
+				<label><input name="name" type="text" placeholder="Ваше имя" required></label>
+				<label><input name="phone"  placeholder="Ваш телефон" required></label>
+				<label><input name="email" type="email" placeholder="Ваш E-mail" required></label>
 	
 				<button type="submit" class="button button_form">заказать кОНСУЛЬТАЦИЮ</button>
 		</form>
@@ -594,9 +595,9 @@
 		<div class="modal__descr">Пульсометр Polar FT1</div>
 
 		<form action="#" class="form form_modal">
-			  <label><input type="text" placeholder="Ваше имя" required></label>
-			  <label><input type="number" placeholder="Ваш телефон" required></label>
-			  <label><input type="email" placeholder="Ваш E-mail" required></label>
+			  <label><input name="name" type="text" placeholder="Ваше имя" required></label>
+			  <label><input name="phone" placeholder="Ваш телефон" required></label>
+			  <label><input name="email" type="email" placeholder="Ваш E-mail" required></label>
   
 			  <button type="submit" class="button button_form">Купить</button>
 	  </form>
@@ -613,13 +614,20 @@
 	 
   </div>
 
+  <a href="#up" class="pageup">
+	  <img src="icons/up.svg" alt="up">
+  </a>
 
 
 
 
-<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+<script  src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 <script src="/js/slick.min.js"></script>
+<script src="/js/jquery.validate.min.js"></script>
+<script src="js/jquery.maskedinput.min.js"></script>
+<script src="js/wow.min.js"></script>
 <script src="/js/script.js"></script>
   
   
